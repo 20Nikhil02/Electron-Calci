@@ -1,0 +1,56 @@
+{
+  "name": "Calculator",
+  "ProductName": "Calculator",
+  "version": "1.0.0",
+  "description": "Tool Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev:watch": "npx electronmon --trace-warnings .",
+    "make": "electron-forge make",
+    "build": "electron-builder -p always "
+  },
+  "config": {
+    "strict-ssl": "false"
+  },
+  "keywords": [
+    "electronjs",
+    "reactjs"
+  ],
+  
+  "author": "Nikhil",
+  "license": "ISC",
+  "dependencies": {
+    "electron-log": "^5.1.2",
+    "electron-updater": "^6.1.8",
+    "nodemailer": "^6.9.13",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^15.2.0"
+  },
+  "build": {
+    "appId": "com.example.todo",
+    "productName": "Calculator",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "index.js",
+      "index.html",
+      "index.css",
+      "package.json"
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "20Nikhil",
+        "repo": "Electron-Calci",
+        "releaseType": "draft"
+      }
+    ]
+  }
+}

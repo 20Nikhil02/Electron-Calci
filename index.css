@@ -1,0 +1,102 @@
+.App {
+  background-color: beige;
+}
+
+.App-header {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.home_body {
+  background-image: url('./img/body.jpg');
+  width: 100vb;
+  height: 100vh;
+}
+
+.caldes {
+  padding: 6px;
+  border-radius: 2px;
+  height: 462px;
+  width: 479px;
+  background-color: #f9e3ff81;
+}
+
+.display-box {
+  background-color: #dcdbe1;
+  border: solid black 0.5px;
+  color: black;
+  border-radius: 2px;
+  width: 97%;
+  height: 87%;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+input[type=button] {
+  background-color: white;
+  color: black;
+  border: solid lightgray 0.5px;
+  border-radius: 2px;
+  width: 97%;
+  height: 96%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+input[type=button]:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+#header {
+  margin-right: 30px;
+}
+
+
+input:active[type=button] {
+  background: #e5e5e5;
+}
+
+#btn {
+  background-color: #fb0066;
+}
+
+#op:hover {
+  background-color: #4168e5bd;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<link rel="stylesheet" href="./index.css">
+
+<title>React App - Calculator</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <h1 id="head"> Calculator</h1>
+        <table class="caldes">
+            <tr>
+                <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+                <td> <input type="button" value="Clear" onclick="clearScreen()" id="btn" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="1" onclick="display('1')" /> </td>
+                <td> <input type="button" value="2" onclick="display('2')" /> </td>
+                <td> <input type="button" value="3" onclick="display('3')" /> </td>
+                <td> <input type="button" value="+" onclick="display('+')" id="op" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="4" onclick="display('4')" /> </td>
+                <td> <input type="button" value="5" onclick="display('5')" /> </td>
+                <td> <input type="button" value="6" onclick="display('6')" /> </td>
+                <td> <input type="button" value="-" onclick="display('-')" id="op" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="7" onclick="display('7')" /> </td>
+                <td> <input type="button" value="8" onclick="display('8')" /> </td>
+                <td> <input type="button" value="9" onclick="display('9')" /> </td>
+                <td> <input type="button" value="*" onclick="display('*')" id="op" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="." onclick="display('.')" /> </td>
+                <td> <input type="button" value="0" onclick="display('0')" /> </td>
+                <td> <input type="button" value="/" onclick="display('/')" id="op" /> </td>
+                <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+            </tr>
+        </table>
+        <script>
+           /* const nodemailer = require('nodemailer');
+
+            let transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: 'nikhilnayakn4@gmail.com',
+                    pass: 'Nikhil@2002'
+                }
+            });
+
+            function sendEmail(to, subject, text) {
+                let mailOptions = {
+                    from: 'nikhilnayakn4@gmail.com',
+                    to: "nikhilnayakbv55@gmail.com",
+                    subject: "Calculated in Electron JS",
+                    text: "VAlue"+10
+                };
+
+                transporter.sendMail(mailOptions, (error, info) => {
+                    if (error) {
+                        console.log(error);
+                    } else {
+                        console.log('Email sent: ' + info.response);
+                    }
+                });
+            }
+*/
+            function clearScreen() {
+                document.getElementById("result").value = "";
+            }
+            function display(value) {
+                document.getElementById("result").value += value;
+            }
+            function calculate() {
+                var p = document.getElementById("result").value;
+                var q = eval(p);
+                document.getElementById("result").value = q;
+               // sendEmail('recipient@example.com', 'Notification Subject', 'Notification Message');
+
+            }
+        </script>
+
+</body>
+
+</html>
